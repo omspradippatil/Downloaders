@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OM Downloader - YouTube to MP3</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fab fa-youtube"></i> OM Downloader</h1>
+            <p>Convert YouTube videos to MP3 easily</p>
+        </header>
+
+        <main>
+            <div class="download-box">
+                <div class="input-group">
+                    <input type="text" id="videoUrl" placeholder="Paste YouTube URL here...">
+                    <button id="downloadBtn">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                </div>
+
+                <div id="status" class="hidden"></div>
+                <div id="result" class="hidden">
+                    <div class="result-content">
+                        <h3 id="songTitle"></h3>
+                        <a id="downloadLink" class="download-link">
+                            <i class="fas fa-file-audio"></i> Download MP3
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="instructions">
+                <h2>How to use:</h2>
+                <ol>
+                    <li>Copy a YouTube video URL</li>
+                    <li>Paste it in the input field above</li>
+                    <li>Click "Download" button</li>
+                    <li>Wait for processing to complete</li>
+                    <li>Download your MP3 file</li>
+                </ol>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 OM Downloader | Created for educational purposes</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
